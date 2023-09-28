@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+/*
 func main() {
 	name := "bill"
 
@@ -13,4 +14,12 @@ func main() {
 
 func printPointer(namePointer *string) {
 	fmt.Println(&namePointer)
+}*/
+
+func main() {
+	greeting := "Hi There!"
+
+	go (func() {
+		fmt.Println(greeting)
+	})()
 }
