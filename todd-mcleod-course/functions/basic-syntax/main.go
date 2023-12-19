@@ -24,6 +24,8 @@ func main() {
 	fmt.Println("Total Sum: ", total)
 
 	//Defer - Defers the execution till the parent/surrounding function exits.
+	//If a parent function has more than one defer functions, then they all will be added to a stack and called in LIFO fashion.
+	//i.e., executed from the end to start
 	defer fooDeferred()
 	bar("After defer statement")
 
